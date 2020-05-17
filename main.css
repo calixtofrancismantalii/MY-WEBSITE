@@ -1,20 +1,15 @@
-/*universsal selector*/
 *{
     padding: 0px;
-    margin: 0px
+    margin: 0px;
+    box-sizing: border-box;
 }
-/*html*/
 html{
     font-family: sans-serif;
-    height: 100vh;
-    color: #242424;
+    height: 100%;
+    color: black;
 }
-/*body*/
 body{
-    background-image: url(../images/mywebsitebackground.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-color: #faf9ff;
 }
 /*container*/
 .container{
@@ -22,70 +17,91 @@ body{
     margin: auto;
 }
 
-/*universl style for span*/
-span{
-    font-size: 20px
-}
 
 /*navbar*/
+.nav-background-color{
+    background-color: white;
+    height: 88.3px;
+}
 nav{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
-nav div{
-    padding: 2.9% 0px;
+nav > div{
+    text-align: center;
+    padding: 35px 0px;
     margin: 0px 20px;
+}
+nav .active{
+    border-bottom: solid red 6px;
 }
 nav div a{
     text-decoration: none;
-    color: black;
-    display: block;
+    color: inherit;
 }
-nav .active{
-    border-bottom: solid 5px red;
-}
-nav .contact{
+nav .dropdown{
     margin-left: auto;
 }
-nav .content{
+nav .dropdown .content{
+    padding-top: 41px;
     position: absolute;
-    margin: 0px;
     display: none;
 }
-nav .content a{
-    font-size: 20px;
-    display: block;
-    padding: 15px 47px;
+nav .dropdown .content > div{
+    padding: 10px 24px;
 }
-nav .contact:hover .content{
+nav .dropdown .content div a{
+    font-size: 29px;
+}
+nav .dropdown #contact:hover + .content{
+    display: block;
+}
+nav .dropdown .content:hover{
     display: block;
 }
 
-
+  
 /*section*/
-.section{
+section{
+    height: 87.2vh;
+    padding: 0px 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 86vh;
-    padding: 0% 10%;
 }
-.text{
-    width: 460px
+section .name-title div > h3, h1{
+    font-size: 3.1vw;
 }
-.section .text h1{
-    font-size: 50px;
+section .name-title span{
+    font-size: 1.3vw;
+    color: #23c2d5;
 }
-.slogan{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 350px 50px 0px 0px
+section img{
+    width: 65vh;
+}
+
+
+
+/*media queries*/
+@media(max-width:736px){
     
+    
+    
+    
+    
+    
+    
+    
+    section > img{
+        display: none;
+    }
 }
+
+
+
 
 
 
