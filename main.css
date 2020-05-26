@@ -35,7 +35,7 @@ nav > div{
     margin: 0px 20px;
 }
 nav .active{
-    border-bottom: solid red 6px;
+    border-bottom: solid blue 6px;
 }
 nav div a{
     text-decoration: none;
